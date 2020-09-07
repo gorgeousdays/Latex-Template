@@ -111,3 +111,17 @@ $$
 \end{vmatrix}
 ```
 
+##### 2.7公式内换行
+
+```latex
+\begin{equation}
+\begin{split} %通过split标签实现公式内换行  
+&\mbox{目标函数:}Q=x+y\\  %通过&实现对齐，两处&处将自动对齐
+s.t.&\begin{cases
+373x\le3000\\
+201y\le1500\\
+74973xy\le4500000\\
+\end{cases}
+\end{split}
+\end{equation}
+```
