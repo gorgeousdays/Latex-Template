@@ -1,18 +1,14 @@
-
 ## 数学建模论文模板
 
-基于[全国大学生数学建模竞赛 LaTeX 论文](https://github.com/latexstudio/CUMCMThesis)进行修改.
+### CUMCM
 
-图片文件请放置在figures文件夹中.
+国赛模板，基于[CUMCMThesis](https://github.com/latexstudio/CUMCMThesis)进行修改.
 
-notes文件夹为LaTeX笔记.
+### MCM
 
+美赛模板，基于[easymcm](https://github.com/xjtu-blacksmith/easymcm)进行修改.美赛相关文件见[MCM-Note](https://github.com/gorgeousdays/MCM-Note).
 
-如果需要去掉封面并把论文标题保留在摘要上面，在加载类的使用如下语句：
-```
-    \documentclass[withoutpreface,bwprint]{cumcmthesis}
-```
-如果需要封面页，则是与原来一致：
-```
-    \documentclass[bwprint]{cumcmthesis}
-```
+### Note
+
+LaTeX笔记，
+

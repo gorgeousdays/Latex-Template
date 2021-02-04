@@ -1,0 +1,196 @@
+%% 美赛模板：正文部分
+
+\documentclass[12pt]{article}  % 官方要求字号不小于 12 号，此处选择 12 号字体
+
+% 本模板不需要填写年份，以当前电脑时间自动生成
+% 请在以下的方括号中填写队伍控制号
+\usepackage[21xxxxxx]{easymcm}  % 载入 EasyMCM 模板文件
+\problem{E}  % 请在此处填写题号
+\usepackage{mathptmx}  % 这是 Times 字体，中规中矩 
+%\usepackage{mathpazo}  % 这是 COMAP 官方杂志采用的更好看的 Palatino 字体，可替代以上的 mathptmx 宏包
+\usepackage{listings}
+\usepackage{float}
+\title{Title}  % 标题
+
+
+% 如需要修改题头（默认为 MCM/ICM），请使用以下命令（此处修改为 MCM）
+%\renewcommand{\contest}{MCM}
+
+% 文档开始
+\begin{document}
+
+% 此处填写摘要内容
+\begin{abstract}
+    %因为 ...背景，我们进行了以下分析，解决问题。
+    %问题背景+对问题分析+总结+Keywords
+    %相关句式可借鉴
+    %First, two basic model are established for better analysis.
+    %Fourth, for Task 3, we modify the initial model by taking time into account and generate a new index CICI accordingly.
+
+
+
+
+    % keywords看论文情况再用
+    % 美赛论文中无需注明关键字。若您一定要使用，
+    % 请将以下两行的注释号 '%' 去除，以使其生效
+    \vspace{5pt}
+    \textbf{Keywords}: \LaTeX.
+\end{abstract}
+
+\maketitle  % 生成 Summary Sheet
+\tableofcontents  % 生成目录
+
+
+
+
+
+
+% 正文开始
+\section{Introduction}
+\subsection{Problem Background}
+%自己重写，考虑结合实事或者图片，可以加引用
+\subsection{Restatement of Problem}
+%关键加粗，问题精简
+
+\subsection{Our work}
+%流程图   分析过程
+
+
+
+
+
+
+
+\section{Assumptions and Notation}
+\subsection{Assumptions}
+%前言加假设
+%可借鉴的前言：Plastic waste disposal is a complex and interdisciplinary problem with international significance. Relevant questions involve subjects like politics, economics, culture, human biology, ecology, geology, and many others. It is impossible to model every possible circumstance. So, we made a couple of assumptions and simplifications, each of which is properly justified.
+
+%可借鉴的假设：The data we collect from online databases is accurate, reliable and mutually consistent. Because our data sources are all websites of international organizations, it’s reasonable to assume the high quality of their data.
+
+
+\newtheorem{assumption}{Assumption}[subsection]
+\begin{assumption}
+
+\end{assumption}
+
+\subsection{Notations}
+The primary notations used in this paper are listed in Table \ref{tb:notation}.
+
+\begin{table}[H]
+\begin{center}
+\caption{Notations}
+\begin{tabular}{cl}
+	\toprule
+   %视具体情况（符号长度）调整一下的cm
+	\multicolumn{1}{m{3cm}}{\textbf{Symbol}}
+	&\multicolumn{1}{m{8cm}}{\textbf{Definition}}\\
+	\midrule
+	\multicolumn{1}{m{3cm}}{\LaTeX}&LaTex\\
+   \multicolumn{1}{m{3cm}}{\LaTeX}&LaTex\\
+
+
+	\bottomrule
+\end{tabular}\label{tb:notation}
+\end{center}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+%以下为论文主体部分 视具体情况来写 建议一问作为一大点
+\section{The Models}
+
+
+
+
+
+
+
+
+
+
+\section{Model evalution}
+%视具体情况是否做灵敏度分析，也考虑将灵敏度分析放在模型中
+\subsection{Sensitivity analysis}
+
+
+\subsection{Strengths}
+%以下两句可以作为参考 可以重点加粗 视具体情况是否写成一段
+%The model uses accurate and latest databases to guarantee the reliability of results. The results have high reference value and can be applied in real life immediately. Both of our models quantify levels of plastic waste, making it intuitive to show the results of models.
+%The model comprehensively evaluates the level and all the factors selected are objective. Through comprehensive evaluation, our model can output the compellent results. With subjective factors excluded, the model is more stable in the evaluation progress.
+\begin{itemize}
+\item 
+
+\item	
+\end{itemize}
+
+\subsection{Weaknesses and Further Improvement}
+%以下两句可以作为参考 可以加粗重点 视具体情况是否写成一段
+%Some indicators are missing. To get the index, it requires extra weighting of the indicators, which means the Model can be complex sometimes.
+%We assume that all the countries or regions will actively cooperate with interventions we put forward. Neglecting those passive countries, there may be some deviations between the practical outcome and that we predicted.
+\begin{itemize}
+\item 
+\item	
+ \end{itemize}
+
+
+
+
+
+
+
+
+\subsection{Conclusion}
+
+
+
+
+
+
+
+
+
+
+% 以下为信件/备忘录部分，不需要可自行去掉
+% 如有需要可将整个 letter 环境移动到文章开头或中间
+% 请在后一个花括号内填写信件（Letter）或备忘录（Memorandum）标题
+
+\begin{letter}{Memo}
+\begin{flushleft}  % 左对齐环境，无首行缩进
+\textbf{To:}  ICM\\
+\textbf{From:} Team 21xxxxxx\\
+\textbf{Date:} February 8, 2021\\
+\textbf{Subject:} The suggestions for group testing
+\end{flushleft}
+%关于信的格式写的时候要注意一下
+
+\end{letter}
+
+
+% 参考文献，此处以 MLA 引用格式为例
+%前面用\cite{}
+\begin{thebibliography}{99}
+\bibitem{1} Einstein, A., Podolsky, B., \& Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete?. \emph{Physical review}, 47(10), 777.
+\bibitem{2} \emph{A simple, easy \LaTeX\ template for MCM/ICM: EasyMCM}. (2018). Retrieved December 1, 2019, from\url{https://www.cnblogs.com/xjtu-blacksmith/p/easymcm.html}
+
+\end{thebibliography}
+
+
+% 以下为附录内容
+% 如您的论文中不需要附录，请自行删除
+\begin{subappendices}  % 附录环境
+
+\section{Appendix A:The code}
+\begin{lstlisting}[language=Python]
+\end{lstlisting}
+
+\end{subappendices}
+
+\end{document}  % 结束
